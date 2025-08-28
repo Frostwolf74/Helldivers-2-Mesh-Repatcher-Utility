@@ -5,10 +5,6 @@ id_list = [
         
 ]
 
-names = [
-        
-]
-
 # create patch
 API.create_patch()
 
@@ -28,13 +24,3 @@ for i, id in enumerate(id_list):
     bpy.context.view_layer.objects.active = AO
     AO.select_set(True)
 
-    # # export patch  
-    # try:
-    #     API.export_patch("F:/export/prepped/" + names[i])
-    # except Exception as e:
-    #     # raise Exception(str(e))
-    #     print("Warning, ignoring exception: " + str(e))
-    #     continue
-
-
-    
